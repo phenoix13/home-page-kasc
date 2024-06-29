@@ -81,6 +81,34 @@
             font-weight: bold;
 
         }
+        /* nav list*/
+        .list{
+            display: block;
+            position: relative;
+        }
+        .child{
+            position: absolute;
+            display: none;
+            background-color: white;
+            z-index: 1;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 100%;
+        }
+        .child a{
+            color: black;
+            font-size: 1.4rem;
+            display: block;
+            text-align: center;
+            transition: all 0.4s linear;
+        }
+        .child a:hover{
+            background-color: white;
+            padding: 0;            
+        }
+        .list:hover .child{
+            display: block;
+        }
         /* for phone*/
         @media(max-width:600px){
             header{
@@ -139,6 +167,34 @@
             font-size: 0.7rem;
             font-weight: bold;
         }
+                /* nav list*/
+                .list{
+            display: block;
+            position: relative;
+        }
+        .child{
+            position: absolute;
+            display: none;
+            background-color: white;
+            z-index: 1;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 100%;
+        }
+        .child a{
+            color: black;
+            font-size: 0.8rem;
+            display: block;
+            text-align: center;
+            transition: all 0.4s linear;
+        }
+        .child a:hover{
+            background-color: white;
+            padding: 0;            
+        }
+        .list:hover .child{
+            display: block;
+        }
         }
     </style>
 </head>
@@ -153,7 +209,11 @@
             </a></li>
             <li class="list"><a href="">
                 COURSE
-            </a></li>
+            </a>
+            <div class="child">
+                <a href="">B.SC.CS</a>
+            </div>
+            </li>
             <li><a href="">
                 NEWS
             </a></li>
